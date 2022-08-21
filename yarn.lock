@@ -1806,16 +1806,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@linaria/react@npm:^3.0.0-beta.19":
-  version: 3.0.0-beta.19
-  resolution: "@linaria/react@npm:3.0.0-beta.19"
+"@linaria/react@npm:^3.0.0-beta.22":
+  version: 3.0.0-beta.22
+  resolution: "@linaria/react@npm:3.0.0-beta.22"
   dependencies:
     "@emotion/is-prop-valid": ^0.8.8
-    "@linaria/core": ^3.0.0-beta.19
+    "@linaria/core": ^3.0.0-beta.22
     ts-invariant: ^0.10.3
   peerDependencies:
     react: ">=16"
-  checksum: 82ce0a19341dcfed5d99c6eab8f549d65b3f84363d7b7903978a808502c2434e55429427b3d3fef5dd28765766cc5d3c0c45a3fa2d4ca83f49746a77b10d495e
+  checksum: 6bdeb867d6cbc255288a5f289724d9227cab8f05fa0569d198d246c095395a84fcbd044df8d30b34d0611740836b52a38c7cc71a0c9479e5e0a5c3d98bab73f2
   languageName: node
   linkType: hard
 
@@ -1870,7 +1870,7 @@ __metadata:
   dependencies:
     "@linaria/babel-preset": ^3.0.0-beta.19
     "@linaria/core": ^3.0.0-beta.22
-    "@linaria/react": ^3.0.0-beta.19
+    "@linaria/react": ^3.0.0-beta.22
     "@linaria/rollup": ^3.0.0-beta.19
     "@linaria/shaker": ^3.0.0-beta.19
     "@storybook/react": ^6.5.6
