@@ -1765,6 +1765,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@linaria/core@npm:^3.0.0-beta.22":
+  version: 3.0.0-beta.22
+  resolution: "@linaria/core@npm:3.0.0-beta.22"
+  dependencies:
+    "@linaria/logger": ^3.0.0-beta.20
+    "@linaria/utils": ^3.0.0-beta.20
+  checksum: 67f57811c78821eb4866e3f307078e3c1cf375ca84f23b4a25cf7f4c34b48b76eaef70a4320436a51145a73b4d0fbac54db7459ab5a23049e7c347fee3644abb
+  languageName: node
+  linkType: hard
+
 "@linaria/logger@npm:^3.0.0-beta.19":
   version: 3.0.0-beta.19
   resolution: "@linaria/logger@npm:3.0.0-beta.19"
@@ -1772,6 +1782,16 @@ __metadata:
     debug: ^4.1.1
     picocolors: ^1.0.0
   checksum: db253fec535e5717353636de48951bc9b81d65537f7589bfcdab89198fdf6f6fc895fda6a5fbed45c45c6ca52bc28920b536fa08eca6890e70268b02dc25bef2
+  languageName: node
+  linkType: hard
+
+"@linaria/logger@npm:^3.0.0-beta.20":
+  version: 3.0.0-beta.20
+  resolution: "@linaria/logger@npm:3.0.0-beta.20"
+  dependencies:
+    debug: ^4.1.1
+    picocolors: ^1.0.0
+  checksum: c5c1fbe593d9110fcbf7309517530fbda419c42c4258e0854f05619f917641724718919693a0a12eb50250bace9857435f29f4de8b056e1dc5f40c01eb074a7a
   languageName: node
   linkType: hard
 
@@ -1837,12 +1857,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@linaria/utils@npm:^3.0.0-beta.20":
+  version: 3.0.0-beta.20
+  resolution: "@linaria/utils@npm:3.0.0-beta.20"
+  checksum: dbf2170bf89a06fd7158b979069ca0a445a56baeebe258109a2490d4709dacc5c4b1a3628cd179ba991478809907847e0460c0c32ac92f3d427f9056e2b8c152
+  languageName: node
+  linkType: hard
+
 "@locol23/component-library@workspace:^, @locol23/component-library@workspace:packages/core":
   version: 0.0.0-use.local
   resolution: "@locol23/component-library@workspace:packages/core"
   dependencies:
     "@linaria/babel-preset": ^3.0.0-beta.19
-    "@linaria/core": ^3.0.0-beta.19
+    "@linaria/core": ^3.0.0-beta.22
     "@linaria/react": ^3.0.0-beta.19
     "@linaria/rollup": ^3.0.0-beta.19
     "@linaria/shaker": ^3.0.0-beta.19
