@@ -2110,15 +2110,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@linaria/rollup@npm:^3.0.0-beta.19":
-  version: 3.0.0-beta.19
-  resolution: "@linaria/rollup@npm:3.0.0-beta.19"
+"@linaria/rollup@npm:^3.0.0-beta.23":
+  version: 3.0.0-beta.23
+  resolution: "@linaria/rollup@npm:3.0.0-beta.23"
   dependencies:
-    "@linaria/babel-preset": ^3.0.0-beta.19
+    "@linaria/babel-preset": ^3.0.0-beta.23
     "@rollup/pluginutils": ^4.1.0
-  peerDependencies:
-    "@babel/core": ">=7"
-  checksum: 4e06d69302e9c49227112c6e7f39f9d522069418bbdbd9e18f37e905bcb87fa172302f92a5c17c0862fc42ccf31c9d2a17e695adca7133b8b21fd8f707589d1f
+  checksum: a892a3f2a1fe8e1103f263eaa1ffbe87975aa8b232e79a58d345ce13ffd6538f5fde113d78279e081c4340a854cd93160f71a9b1ea64b0efac7346bbf705165a
   languageName: node
   linkType: hard
 
@@ -2162,7 +2160,7 @@ __metadata:
     "@linaria/babel-preset": ^3.0.0-beta.23
     "@linaria/core": ^3.0.0-beta.22
     "@linaria/react": ^3.0.0-beta.22
-    "@linaria/rollup": ^3.0.0-beta.19
+    "@linaria/rollup": ^3.0.0-beta.23
     "@linaria/shaker": ^3.0.0-beta.19
     "@storybook/react": ^6.5.10
     "@storybook/testing-react": ^1.3.0
