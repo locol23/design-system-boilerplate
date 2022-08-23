@@ -2002,28 +2002,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@linaria/babel-preset@npm:^3.0.0-beta.19":
-  version: 3.0.0-beta.19
-  resolution: "@linaria/babel-preset@npm:3.0.0-beta.19"
-  dependencies:
-    "@babel/generator": ">=7"
-    "@babel/plugin-syntax-dynamic-import": ">=7"
-    "@babel/template": ">=7"
-    "@babel/traverse": ">=7"
-    "@linaria/core": ^3.0.0-beta.19
-    "@linaria/logger": ^3.0.0-beta.19
-    "@linaria/utils": ^3.0.0-beta.19
-    cosmiconfig: ^5.1.0
-    find-up: ^5.0.0
-    source-map: ^0.7.3
-    stylis: ^3.5.4
-  peerDependencies:
-    "@babel/core": ">=7"
-    "@babel/traverse": ">=7"
-  checksum: 26590473b222be42889448cb841d1b2e746f89c5e673622ce6dedc11580d1542ca9568335bb006a64d22482f50382473df73787598089b84aeb6869954de71b7
-  languageName: node
-  linkType: hard
-
 "@linaria/babel-preset@npm:^3.0.0-beta.23":
   version: 3.0.0-beta.23
   resolution: "@linaria/babel-preset@npm:3.0.0-beta.23"
@@ -2046,16 +2024,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@linaria/core@npm:^3.0.0-beta.19":
-  version: 3.0.0-beta.19
-  resolution: "@linaria/core@npm:3.0.0-beta.19"
-  dependencies:
-    "@linaria/logger": ^3.0.0-beta.19
-    "@linaria/utils": ^3.0.0-beta.19
-  checksum: f7bcb955a3266ce55804d4bc8d9698c7227465956f4f369f02755c92c65c420fd349ff6e562c230cf60b7cdc8aeb13339b81cd27d51238b1fbd774115a30b908
-  languageName: node
-  linkType: hard
-
 "@linaria/core@npm:^3.0.0-beta.22":
   version: 3.0.0-beta.22
   resolution: "@linaria/core@npm:3.0.0-beta.22"
@@ -2063,16 +2031,6 @@ __metadata:
     "@linaria/logger": ^3.0.0-beta.20
     "@linaria/utils": ^3.0.0-beta.20
   checksum: 67f57811c78821eb4866e3f307078e3c1cf375ca84f23b4a25cf7f4c34b48b76eaef70a4320436a51145a73b4d0fbac54db7459ab5a23049e7c347fee3644abb
-  languageName: node
-  linkType: hard
-
-"@linaria/logger@npm:^3.0.0-beta.19":
-  version: 3.0.0-beta.19
-  resolution: "@linaria/logger@npm:3.0.0-beta.19"
-  dependencies:
-    debug: ^4.1.1
-    picocolors: ^1.0.0
-  checksum: db253fec535e5717353636de48951bc9b81d65537f7589bfcdab89198fdf6f6fc895fda6a5fbed45c45c6ca52bc28920b536fa08eca6890e70268b02dc25bef2
   languageName: node
   linkType: hard
 
@@ -2086,14 +2044,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@linaria/preeval@npm:^3.0.0-beta.19":
-  version: 3.0.0-beta.19
-  resolution: "@linaria/preeval@npm:3.0.0-beta.19"
+"@linaria/preeval@npm:^3.0.0-beta.23":
+  version: 3.0.0-beta.23
+  resolution: "@linaria/preeval@npm:3.0.0-beta.23"
   dependencies:
-    "@linaria/babel-preset": ^3.0.0-beta.19
-  peerDependencies:
-    "@babel/core": ">=7"
-  checksum: 84ba85d4721c0bd49eb8522f84d3fd8472464832fe59ecd5d3a5a0bc460dc0798249f23233590ba1989154fd0d16b8b1545fd969a8524541bb1fcd3a99122b41
+    "@linaria/babel-preset": ^3.0.0-beta.23
+  checksum: a81b9592968502f7b1a3c8a5f6a7e435ddbddf014ae5722a730675205bee9f978a97443473e79af502d06ee0304ba788ddcc01db4cb2d2a61c25eaeeb499ce63
   languageName: node
   linkType: hard
 
@@ -2120,29 +2076,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@linaria/shaker@npm:^3.0.0-beta.19":
-  version: 3.0.0-beta.19
-  resolution: "@linaria/shaker@npm:3.0.0-beta.19"
+"@linaria/shaker@npm:^3.0.0-beta.23":
+  version: 3.0.0-beta.23
+  resolution: "@linaria/shaker@npm:3.0.0-beta.23"
   dependencies:
+    "@babel/core": ^7.18.2
     "@babel/generator": ">=7"
     "@babel/plugin-transform-runtime": ">=7"
     "@babel/plugin-transform-template-literals": ">=7"
     "@babel/preset-env": ">=7"
-    "@linaria/babel-preset": ^3.0.0-beta.19
-    "@linaria/logger": ^3.0.0-beta.19
-    "@linaria/preeval": ^3.0.0-beta.19
+    "@linaria/babel-preset": ^3.0.0-beta.23
+    "@linaria/logger": ^3.0.0-beta.20
+    "@linaria/preeval": ^3.0.0-beta.23
     babel-plugin-transform-react-remove-prop-types: ^0.4.24
     ts-invariant: ^0.10.3
-  peerDependencies:
-    "@babel/core": ">=7"
-  checksum: e49a1e026a11e61efb811c1ad1d5c616dc329f8a6d6893598fa3de3be302b07fbfe1e056cba41eb3e670b4af1b000dc03ddc9467fedc34caa475bdd60641f213
-  languageName: node
-  linkType: hard
-
-"@linaria/utils@npm:^3.0.0-beta.19":
-  version: 3.0.0-beta.19
-  resolution: "@linaria/utils@npm:3.0.0-beta.19"
-  checksum: 2e93d76c828038672ed37bf7c26919bd483767a697c7b423c08037dff63fbf7a4e685060002ed6034669bc6716285fc6f4744c9ab33de110d1763fee7d7f2fac
+  checksum: 9d50f5d8d53620335a596b2248cb1636c8cbb9bf9c5c7d3a5ab975801c712085c1b03d1babf1657bbe3a9a23e14ab6d60f1abd8c2feaf179e408db5396fb79f0
   languageName: node
   linkType: hard
 
@@ -2161,7 +2109,7 @@ __metadata:
     "@linaria/core": ^3.0.0-beta.22
     "@linaria/react": ^3.0.0-beta.22
     "@linaria/rollup": ^3.0.0-beta.23
-    "@linaria/shaker": ^3.0.0-beta.19
+    "@linaria/shaker": ^3.0.0-beta.23
     "@storybook/react": ^6.5.10
     "@storybook/testing-react": ^1.3.0
     "@testing-library/jest-dom": ^5.16.5
