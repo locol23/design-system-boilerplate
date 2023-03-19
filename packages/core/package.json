@@ -60,7 +60,7 @@
     "node": ">=16.0.0"
   },
   "dependencies": {
-    "@linaria/babel-preset": "^3.0.0-beta.23",
+    "@linaria/babel-preset": "^4.4.3",
     "@linaria/core": "^3.0.0-beta.22",
     "@linaria/react": "^3.0.0-beta.22",
     "@linaria/shaker": "^3.0.0-beta.23"
