@@ -1,29 +1,10 @@
 {
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "extends": "tsconfig/react-library.json",
   "compilerOptions": {
-    "incremental": true,                            
-    "target": "ES2020",                             
-    "useDefineForClassFields": true,
-    "lib": ["DOM", "DOM.Iterable", "ESNext"],
-    "allowJs": false,
-    "skipLibCheck": true,
-    "esModuleInterop": false,
-    "allowSyntheticDefaultImports": true,
-    "strict": true,
-    "forceConsistentCasingInFileNames": true,
-    "module": "ES2020",                             
-    "moduleResolution": "Node",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "sourceMap": true,                              
-    "emitDeclarationOnly": true,
-    "declarationDir": "./types",                    
-    "outDir": "./types",
-    "declaration": true,                            
-    "declarationMap": true,                         
-    "removeComments": true,                         
-    "jsx": "preserve"
+    "declarationDir": "./types",
+    "outDir": "./types"
   },
-  "include": ["src"],
-  "references": [{ "path": "./tsconfig.node.json" }]
+  "include": ["src"]
 }
 
