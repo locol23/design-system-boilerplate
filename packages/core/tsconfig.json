@@ -2,8 +2,8 @@
   "$schema": "https://json.schemastore.org/tsconfig",
   "extends": "tsconfig/react-library.json",
   "compilerOptions": {
-    "declarationDir": "./types",
-    "outDir": "./types"
+    "outDir": "./types",
+    "declarationDir": "./types"
   },
   "include": ["src"]
 }
