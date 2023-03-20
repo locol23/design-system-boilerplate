@@ -1,6 +1,3 @@
-/*
-/// <reference types="vite/client" />
-*/
 /// <reference types="vitest" />
 
 import react from '@vitejs/plugin-react-swc'
@@ -9,7 +6,15 @@ import { defineConfig } from 'vite'
 import linaria from '@linaria/vite'
 
 export default defineConfig(() => ({
-  plugins: [react(), linaria()],
+  plugins: [
+    react(),
+    linaria({
+      babelOptions: {
+        presets: ['@babel/preset-typescript', '@babel/preset-react'],
+      },
+      include: ['**/*.{ts,tsx}'],
+    }),
+  ],
   build: {
     lib: {
       entry: path.resolve(path.join('src/index.ts')),
