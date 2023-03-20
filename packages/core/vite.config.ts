@@ -1,24 +1,21 @@
-/// <reference types="vitest" />
+/*
 /// <reference types="vite/client" />
+*/
+/// <reference types="vitest" />
 
+import react from '@vitejs/plugin-react-swc'
+import path from 'node:path'
 import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
-import path from 'path'
-import linaria from '@linaria/rollup'
+import linaria from '@linaria/vite'
 
-export default defineConfig({
-  test: {
-    globals: true,
-    environment: 'jsdom',
-    setupFiles: './setupTest.ts',
-  },
+export default defineConfig(() => ({
   plugins: [react(), linaria()],
   build: {
     lib: {
-      entry: path.resolve(__dirname, 'src/index.ts'),
-      name: 'component-library',
-      fileName: (format) => `component-library.${format}.js`,
+      entry: path.resolve(path.join('src/index.ts')),
+      fileName: 'component-library',
       formats: ['es', 'cjs'],
+      name: 'component-library',
     },
     rollupOptions: {
       external: ['react', 'react-dom'],
@@ -30,4 +27,9 @@ export default defineConfig({
       },
     },
   },
-})
+  test: {
+    environment: 'happy-dom',
+    globals: true,
+    setupFiles: './setupTest.ts',
+  },
+}))

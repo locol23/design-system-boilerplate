@@ -1,8 +1,14 @@
 {
   "pipeline": {
+    "clean": {
+      "cache": false
+    },
     "build": {
       "dependsOn": ["^build"],
       "outputs": ["dist/**", ".next/**"]
+    },
+    "test": {
+      "cache": false
     },
     "lint": {
       "outputs": []
