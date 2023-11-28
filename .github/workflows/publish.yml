@@ -1,0 +1,49 @@
+name: Publish awesome tokens
+
+on:
+  push
+  #  pull_request:
+  #  branches:
+  #    - main
+  #  types: [ closed ]
+  #  paths:
+  #    - 'packages/awesome-tokens'
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+      #    if: github.event.pull_request.merged == true
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 3
+      - uses: pnpm/action-setup@v2
+        with:
+          version: 8.9.0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'pnpm'
+          registry-url: 'https://npm.pkg.github.com'
+          scope: '@locol23'
+      - name: Install
+        run: pnpm i --frozen-lockfile
+      - name: Build
+        run: pnpm build
+      - name: Publish
+        run: pnpm dlx can-npm-publish --verbose && npm publish || echo "Does not publish"
+        working-directory: packages/awesome-tokens
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Set PACKAGE_VERSION
+        run: echo "PACKAGE_VERSION=$(cat package.json | jq -r .version)" >> $GITHUB_ENV
+        working-directory: packages/awesome-tokens
+      - name: Git tag the package version
+        uses: pkgdeps/git-tag-action@v2
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_repo: ${{ github.repository }}
+          version: ${{ env.PACKAGE_VERSION }}
+          git_commit_sha: ${{ github.sha }}
+          git_tag_prefix: "awesome-tokens-v"
+
