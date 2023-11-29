@@ -1,0 +1,12 @@
+{
+  "system": {
+    "color": {
+      "primary": {
+        "value": "{reference.color.blue.600.value}"
+      },
+      "secondary": {
+        "value": "{reference.color.green.200.value}"
+      }
+    }
+  }
+}

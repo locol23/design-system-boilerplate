@@ -1,0 +1,26 @@
+{
+  "name": "@locol23/awesome-tokens",
+  "version": "1.0.2",
+  "description": "",
+  "main": "dist/tokens.js",
+  "types": "dist/tokens.d.ts",
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "restricted",
+    "registry": "https://npm.pkg.github.com/locol23"
+  },
+  "scripts": {
+    "build": "style-dictionary build && style-dictionary build --config ./config-figma.js",
+    "clean": "rm -rf dist .turbo",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@divriots/style-dictionary-to-figma": "^0.4.0",
+    "@tokens-studio/sd-transforms": "^0.11.10",
+    "style-dictionary": "^3.9.0"
+  }
+}
