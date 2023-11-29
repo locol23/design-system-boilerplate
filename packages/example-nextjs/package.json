@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@locol23/component-library": "workspace:^",
-    "next": "12.2.5",
+    "next": "12.2.6",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
