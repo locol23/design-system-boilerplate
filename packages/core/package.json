@@ -62,7 +62,7 @@
     "@types/react": "^17.0.0 || ^18.0.0"
   },
   "engines": {
-    "node": ">=v16.19.1"
+    "node": ">=16.20.2"
   },
   "dependencies": {
     "@linaria/core": "^4.2.8",
