@@ -19,8 +19,8 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "@divriots/style-dictionary-to-figma": "^0.4.0",
-    "@tokens-studio/sd-transforms": "^0.11.10",
-    "style-dictionary": "^3.9.0"
+    "@divriots/style-dictionary-to-figma": "0.4.0",
+    "@tokens-studio/sd-transforms": "0.11.10",
+    "style-dictionary": "3.9.0"
   }
 }
