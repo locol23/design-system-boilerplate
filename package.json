@@ -19,8 +19,8 @@
     "turbo": "latest"
   },
   "engines": {
-    "npm": ">=7.24.2",
-    "node": ">=v14.20.0"
+    "npm": "12.2.0",
+    "node": "v26.10.0"
   },
   "packageManager": "pnpm@8.10.0"
 }
